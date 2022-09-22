@@ -1858,10 +1858,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.0.2.tgz#1bfafe4b7ed0f3e4105837e056e0a89b108ebe36"
   integrity sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==
 
-"@cypress/react@^6.0.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-6.2.0.tgz#5816ecd26b1595483e0ae6e4eb0dca0725d07197"
-  integrity sha512-arBO5/ed5MM56ypgmMugCOZoAIHH9e+7NH98oF2LCEffr8qkAV4WG5o4S+fqDjFPFP5WNZoKtPC7DEkxOm6kFA==
+"@cypress/react18@^1.1.0":
+  version "1.1.0"
+  resolved "https://nexus.int.ally.com/nexus/repository/npm-group/@cypress/react18/-/react18-1.1.0.tgz#3b1d58f10e60b2612c2de2811a97f0b0ab573de7"
+  integrity sha512-AYd3mSrP3wEJ/uSaDoqxOCiZLuSsjJOI9iesBgzhVJ0A18LWPmc3IoSHKiehfmUXaILRLPMVAe7cl9GY7b0R6Q==
 
 "@cypress/request@^2.88.10":
   version "2.88.10"
