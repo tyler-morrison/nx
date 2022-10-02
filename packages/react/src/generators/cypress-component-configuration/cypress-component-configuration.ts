@@ -1,8 +1,9 @@
 import { cypressComponentProject } from '@nrwl/cypress';
-import { formatFiles, readProjectConfiguration, Tree } from '@nrwl/devkit';
+import { addDependenciesToPackageJson, formatFiles, readProjectConfiguration, Tree } from '@nrwl/devkit';
+import { cypressReact18Version } from "../../utils/versions";
 import { addFiles } from './lib/add-files';
 import { updateProjectConfig } from './lib/update-configs';
-import { CypressComponentConfigurationSchema } from './schema.d';
+import { CypressComponentConfigurationSchema } from './schema';
 
 /**
  * This is for using cypresses own Component testing, if you want to use test
@@ -18,6 +19,9 @@ export async function cypressComponentConfigGenerator(
     project: options.project,
     skipFormat: true,
   });
+  const updateReactDependencies = await addDependenciesToPackageJson(tree, {}, {
+    '@cypress/react18': cypressReact18Version
+  });
 
   await updateProjectConfig(tree, options);
   addFiles(tree, projectConfig, options);
@@ -27,6 +31,7 @@ export async function cypressComponentConfigGenerator(
 
   return () => {
     installTask();
+    updateReactDependencies();
   };
 }
 

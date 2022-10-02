@@ -24,6 +24,8 @@ export const typesReactRouterDomVersion = '5.3.3';
 
 export const testingLibraryReactVersion = '13.3.0';
 
+export const cypressReact18Version = '1.1.0'
+
 export const reduxjsToolkitVersion = '1.8.5';
 export const reactReduxVersion = '8.0.2';
 export const reactTestRendererVersion = '18.2.0';

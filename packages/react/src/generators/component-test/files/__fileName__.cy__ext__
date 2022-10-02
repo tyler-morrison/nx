@@ -1,5 +1,4 @@
-import * as React from 'react'
-import { mount } from 'cypress/react'
+import { mount } from 'cypress/react18'
 <%- importStatement %>
 
 <% for (let cmp of components) { %>
